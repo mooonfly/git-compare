@@ -2,7 +2,7 @@
 
 ## 0.0.2
 
-- Rename the extension to Git Compare for Code while keeping the Source Control view named Git Compare.
+- Rename the extension to Git Compare for Code while naming the Source Control view Compare.
 - Use a transparent background for the extension icon.
 
 ## 0.0.1

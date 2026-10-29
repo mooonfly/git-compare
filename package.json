@@ -171,8 +171,8 @@
       "scm": [
         {
           "id": "gitFolderCompare.results",
-          "name": "Git Compare",
-          "contextualTitle": "Git Compare"
+          "name": "Compare",
+          "contextualTitle": "Compare"
         }
       ]
     }
