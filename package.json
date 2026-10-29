@@ -1,0 +1,166 @@
+{
+  "name": "git-compare",
+  "displayName": "Git Compare",
+  "description": "Compare an entire Git project's working tree with a branch, tag, or commit.",
+  "version": "0.3.0",
+  "publisher": "local",
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "SCM Providers"
+  ],
+  "main": "./src/extension.js",
+  "extensionKind": [
+    "workspace"
+  ],
+  "capabilities": {
+    "untrustedWorkspaces": {
+      "supported": false
+    }
+  },
+  "scripts": {
+    "test": "node --test",
+    "check": "node --check src/git.js && node --check src/extension.js"
+  },
+  "contributes": {
+    "commands": [
+      {
+        "command": "gitFolderCompare.project",
+        "title": "Git: Compare Project\u2026",
+        "icon": "$(git-compare)"
+      },
+      {
+        "command": "gitFolderCompare.folder",
+        "title": "Compare This Folder\u2026"
+      },
+      {
+        "command": "gitFolderCompare.refresh",
+        "title": "Git Compare: Refresh",
+        "icon": "$(refresh)"
+      },
+      {
+        "command": "gitFolderCompare.target",
+        "title": "Git Compare: Change Target\u2026",
+        "icon": "$(git-compare)"
+      },
+      {
+        "command": "gitFolderCompare.filter",
+        "title": "Git Compare: Filter Files\u2026",
+        "icon": "$(filter)"
+      },
+      {
+        "command": "gitFolderCompare.status",
+        "title": "Git Compare: Filter Status\u2026",
+        "icon": "$(list-filter)"
+      },
+      {
+        "command": "gitFolderCompare.clear",
+        "title": "Git Compare: Clear",
+        "icon": "$(clear-all)"
+      },
+      {
+        "command": "gitFolderCompare.open",
+        "title": "Git Compare: Open Diff"
+      },
+      {
+        "command": "gitFolderCompare.expandAll",
+        "title": "Git Compare: Expand All",
+        "icon": "$(expand-all)"
+      }
+    ],
+    "menus": {
+      "explorer/context": [
+        {
+          "command": "gitFolderCompare.folder",
+          "when": "explorerResourceIsFolder && resourceScheme == file",
+          "group": "gitCompare@1"
+        }
+      ],
+      "commandPalette": [
+        {
+          "command": "gitFolderCompare.folder",
+          "when": "false"
+        },
+        {
+          "command": "gitFolderCompare.open",
+          "when": "false"
+        },
+        {
+          "command": "gitFolderCompare.refresh",
+          "when": "gitFolderCompare.hasComparison"
+        },
+        {
+          "command": "gitFolderCompare.target",
+          "when": "gitFolderCompare.hasComparison"
+        },
+        {
+          "command": "gitFolderCompare.filter",
+          "when": "gitFolderCompare.hasComparison"
+        },
+        {
+          "command": "gitFolderCompare.status",
+          "when": "gitFolderCompare.hasComparison"
+        },
+        {
+          "command": "gitFolderCompare.clear",
+          "when": "gitFolderCompare.hasComparison"
+        },
+        {
+          "command": "gitFolderCompare.expandAll",
+          "when": "gitFolderCompare.hasComparison"
+        }
+      ],
+      "view/title": [
+        {
+          "command": "gitFolderCompare.project",
+          "when": "view == gitFolderCompare.results",
+          "group": "navigation@1"
+        },
+        {
+          "command": "gitFolderCompare.target",
+          "when": "view == gitFolderCompare.results && gitFolderCompare.hasComparison",
+          "group": "comparison@1"
+        },
+        {
+          "command": "gitFolderCompare.refresh",
+          "when": "view == gitFolderCompare.results && gitFolderCompare.hasComparison",
+          "group": "navigation@3"
+        },
+        {
+          "command": "gitFolderCompare.filter",
+          "when": "view == gitFolderCompare.results && gitFolderCompare.hasComparison",
+          "group": "navigation@4"
+        },
+        {
+          "command": "gitFolderCompare.status",
+          "when": "view == gitFolderCompare.results && gitFolderCompare.hasComparison",
+          "group": "comparison"
+        },
+        {
+          "command": "gitFolderCompare.clear",
+          "when": "view == gitFolderCompare.results && gitFolderCompare.hasComparison",
+          "group": "comparison"
+        },
+        {
+          "command": "gitFolderCompare.expandAll",
+          "when": "view == gitFolderCompare.results && gitFolderCompare.hasComparison",
+          "group": "navigation@5"
+        }
+      ]
+    },
+    "views": {
+      "scm": [
+        {
+          "id": "gitFolderCompare.results",
+          "name": "Git Compare",
+          "contextualTitle": "Git Compare"
+        }
+      ]
+    }
+  },
+  "extensionDependencies": [
+    "vscode.git"
+  ]
+}
