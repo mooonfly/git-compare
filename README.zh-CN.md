@@ -27,7 +27,7 @@
 从源码打包安装时，请先准备 Node.js 和 npm，然后在仓库根目录执行：
 
 ```sh
-npx @vscode/vsce package --allow-missing-repository
+npx @vscode/vsce package
 ```
 
 在 VS Code 命令面板执行 **Extensions: Install from VSIX…**（从 VSIX 安装），选择生成的 `.vsix` 文件。

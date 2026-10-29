@@ -27,7 +27,7 @@ Comparisons do not check out branches or change the Git index.
 To build and install from source, run the following in the repository root with Node.js and npm available:
 
 ```sh
-npx @vscode/vsce package --allow-missing-repository
+npx @vscode/vsce package
 ```
 
 In VS Code, run **Extensions: Install from VSIX…** from the Command Palette and select the generated `.vsix` file.

@@ -2,9 +2,25 @@
   "name": "git-compare",
   "displayName": "Git Compare",
   "description": "Compare an entire Git project's working tree with a branch, tag, or commit.",
-  "version": "0.3.0",
-  "publisher": "local",
+  "version": "0.0.1",
+  "publisher": "mooonfly",
+  "icon": "media/icon.png",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mooonfly/git-compare.git"
+  },
+  "homepage": "https://github.com/mooonfly/git-compare#readme",
+  "bugs": {
+    "url": "https://github.com/mooonfly/git-compare/issues"
+  },
+  "keywords": [
+    "git",
+    "diff",
+    "compare",
+    "branch",
+    "working tree"
+  ],
   "engines": {
     "vscode": "^1.85.0"
   },
@@ -21,6 +37,7 @@
     }
   },
   "scripts": {
+    "vscode:prepublish": "npm run check && npm test",
     "test": "node --test",
     "check": "node --check src/git.js && node --check src/extension.js"
   },
