@@ -2,7 +2,7 @@
   "name": "git-compare-for-code",
   "displayName": "Git Compare for Code",
   "description": "Compare an entire Git project's working tree with a branch, tag, or commit.",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "publisher": "mooonfly",
   "icon": "media/icon.png",
   "license": "MIT",
@@ -171,8 +171,8 @@
       "scm": [
         {
           "id": "gitFolderCompare.results",
-          "name": "Git Compare for Code",
-          "contextualTitle": "Git Compare for Code"
+          "name": "Git Compare",
+          "contextualTitle": "Git Compare"
         }
       ]
     }

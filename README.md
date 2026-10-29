@@ -37,10 +37,10 @@ In VS Code, run **Extensions: Install from VSIX…** from the Command Palette an
 ### Compare a project
 
 1. Open a Git repository in VS Code.
-2. Run **Git: Compare Project…** from the Command Palette, or use the compare button in the **Git Compare for Code** view under **Source Control**.
+2. Run **Git: Compare Project…** from the Command Palette, or use the compare button in the **Git Compare** view under **Source Control**.
 3. If the workspace contains multiple repositories, select one.
 4. Choose a branch or tag, or select **Enter Commit ID…** and enter a full or abbreviated commit hash.
-5. Browse the results in **Git Compare for Code** and click a file to open its diff.
+5. Browse the results in **Git Compare** and click a file to open its diff.
 
 The left side shows the selected revision; the right side shows the current working-tree file and is editable when that file exists. Added and untracked files have an empty left side; deleted files have an empty right side.
 
@@ -48,7 +48,7 @@ Only the latest comparison appears in the view. Starting a new project or folder
 
 ### Compare a folder
 
-Right-click a folder in the Explorer and choose **Compare This Folder…**, then select a target revision. Results are limited to that folder. The full comparison scope is displayed at the top of the Git Compare for Code view.
+Right-click a folder in the Explorer and choose **Compare This Folder…**, then select a target revision. Results are limited to that folder. The full comparison scope is displayed at the top of the Git Compare view.
 
 ### Manage the results
 

@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.0.2
+
+- Rename the extension to Git Compare for Code while keeping the Source Control view named Git Compare.
+- Use a transparent background for the extension icon.
+
 ## 0.0.1
 
 - Compare an entire Git repository or a selected folder with a branch, tag, or commit.
