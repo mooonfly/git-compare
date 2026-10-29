@@ -11,7 +11,7 @@ function activate(context) {
   let status = '';
   const events = new vscode.EventEmitter();
   const guarded = action => async (...args) => {
-    try { await action(...args); } catch (error) { vscode.window.showErrorMessage(`Git Compare: ${error.message}`); }
+    try { await action(...args); } catch (error) { vscode.window.showErrorMessage(`Git Compare for Code: ${error.message}`); }
   };
   const provider = {
     onDidChangeTreeData: events.event,

@@ -1,6 +1,6 @@
 {
-  "name": "git-compare",
-  "displayName": "Git Compare",
+  "name": "git-compare-for-code",
+  "displayName": "Git Compare for Code",
   "description": "Compare an entire Git project's working tree with a branch, tag, or commit.",
   "version": "0.0.1",
   "publisher": "mooonfly",
@@ -54,36 +54,36 @@
       },
       {
         "command": "gitFolderCompare.refresh",
-        "title": "Git Compare: Refresh",
+        "title": "Git Compare for Code: Refresh",
         "icon": "$(refresh)"
       },
       {
         "command": "gitFolderCompare.target",
-        "title": "Git Compare: Change Target\u2026",
+        "title": "Git Compare for Code: Change Target\u2026",
         "icon": "$(git-compare)"
       },
       {
         "command": "gitFolderCompare.filter",
-        "title": "Git Compare: Filter Files\u2026",
+        "title": "Git Compare for Code: Filter Files\u2026",
         "icon": "$(filter)"
       },
       {
         "command": "gitFolderCompare.status",
-        "title": "Git Compare: Filter Status\u2026",
+        "title": "Git Compare for Code: Filter Status\u2026",
         "icon": "$(list-filter)"
       },
       {
         "command": "gitFolderCompare.clear",
-        "title": "Git Compare: Clear",
+        "title": "Git Compare for Code: Clear",
         "icon": "$(clear-all)"
       },
       {
         "command": "gitFolderCompare.open",
-        "title": "Git Compare: Open Diff"
+        "title": "Git Compare for Code: Open Diff"
       },
       {
         "command": "gitFolderCompare.expandAll",
-        "title": "Git Compare: Expand All",
+        "title": "Git Compare for Code: Expand All",
         "icon": "$(expand-all)"
       }
     ],
@@ -171,8 +171,8 @@
       "scm": [
         {
           "id": "gitFolderCompare.results",
-          "name": "Git Compare",
-          "contextualTitle": "Git Compare"
+          "name": "Git Compare for Code",
+          "contextualTitle": "Git Compare for Code"
         }
       ]
     }

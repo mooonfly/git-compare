@@ -1,6 +1,6 @@
 [English](README.md)
 
-# Git Compare
+# Git Compare for Code
 
 在 VS Code 中，将 Git 项目的当前工作区与分支、标签或提交进行比较。在源代码管理侧栏按目录浏览变更文件，点击即可使用 VS Code 原生差异编辑器查看差异。
 
@@ -37,10 +37,10 @@ npx @vscode/vsce package
 ### 比较项目
 
 1. 在 VS Code 中打开 Git 仓库。
-2. 从命令面板执行 **Git: Compare Project…**，或点击 **Source Control**（源代码管理）下 **Git Compare** 视图的比较按钮。
+2. 从命令面板执行 **Git: Compare Project…**，或点击 **Source Control**（源代码管理）下 **Git Compare for Code** 视图的比较按钮。
 3. 如果工作区包含多个仓库，先选择仓库。
 4. 选择分支或标签，或选择 **Enter Commit ID…**，输入完整或缩写的提交哈希。
-5. 在 **Git Compare** 中浏览结果，点击文件打开差异编辑器。
+5. 在 **Git Compare for Code** 中浏览结果，点击文件打开差异编辑器。
 
 左侧显示选定的目标版本，右侧显示当前工作区文件；当前文件存在时，可直接编辑右侧。新增和未跟踪文件的左侧为空，已删除文件的右侧为空。
 
@@ -48,7 +48,7 @@ npx @vscode/vsce package
 
 ### 比较目录
 
-在资源管理器中右键点击目录，选择 **Compare This Folder…**，然后选择目标版本。结果仅包含所选目录内的变更，Git Compare 视图顶部会显示完整比较范围。
+在资源管理器中右键点击目录，选择 **Compare This Folder…**，然后选择目标版本。结果仅包含所选目录内的变更，Git Compare for Code 视图顶部会显示完整比较范围。
 
 ### 管理比较结果
 
